@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MedInFHIR.Views.UserProfile">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness">
+            <On Platform="iOS" Value="20, 40, 20, 20" />
+            <On Platform="Android, WinPhone, Windows" Value="20" />
+        </OnPlatform>
+    </ContentPage.Padding>
+    <StackLayout>
+        <Label Text="First Name:" />
+        <Entry x:Name="fName" IsEnabled="False"/>
+        <Label Text="Last Name:" />
+        <Entry x:Name="lName" IsEnabled="False"/>
+        <Label Text="Email Id:" />
+        <Entry x:Name="email" IsEnabled="False"/>
+        <Label Text="Primary Contact Number:" />
+        <Entry x:Name="priContactNumb" IsEnabled="False"/>
+        <Label Text="Secondary Contact Number:" />
+        <Entry x:Name="secContactNumb" IsEnabled="False"/>
+    </StackLayout>
+</ContentPage>

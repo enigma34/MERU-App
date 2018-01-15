@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MedInFHIR.Views.Login">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness">
+            <On Platform="iOS" Value="20, 40, 20, 20" />
+            <On Platform="Android, WinPhone, Windows" Value="20" />
+        </OnPlatform>
+    </ContentPage.Padding>
+    <StackLayout>
+        
+        <Label Text="Enter Username:" />
+        <Entry x:Name="Username" />
+        <Label Text="Enter Password:" />
+        <Entry x:Name="Password" IsPassword="true"/>
+        <Button x:Name="loginButon" Text="Login" Clicked="OnLogin" />
+        <Button x:Name="cancelButton" Text="Cancel" Clicked="OnCancel" />
+        <Label FontSize="Medium" TextColor="Red" HorizontalOptions="Center" x:Name="lblError" />
+    </StackLayout>
+</ContentPage>

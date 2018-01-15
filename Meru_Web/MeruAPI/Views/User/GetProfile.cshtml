@@ -1,0 +1,65 @@
+﻿@model Meru_Web.Models.UserProfile
+
+@{
+    ViewBag.Title = "GetProfile";
+}
+
+<h2>GetProfile</h2>
+
+<div>
+    <h4>UserProfile</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmailId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmailId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ContactNoPrimary)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ContactNoPrimary)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ContactNoSecondary)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ContactNoSecondary)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserProfilePicture)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserProfilePicture)
+        </dd>
+    </dl>
+</div>
+<p>
+    @*@Html.ActionLink("Edit", "Edit", new { id = Model.ProfileId }) |
+    @Html.ActionLink("Back to List", "Index")*@
+</p>
